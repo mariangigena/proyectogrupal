@@ -22,7 +22,7 @@ La falta de una herramienta efectiva para identificar a aquellos reviewers con e
 
 
 
-## Objetivo
+##  Objetivo:
 
 El objetivo principal de nuestro proyecto, es proporcionar a las empresas del sector vinícola una valiosa visión sobre las experiencias y opiniones de los usuarios en relación con bodegas y bares o clubes de vinos en Estados Unidos. A través de un análisis exhaustivo de las reseñas y recomendaciones, buscamos identificar a aquellos reviewers que han puntuado establecimientos vinícolas de manera significativa, determinando así a los conocedores con expertise en vinos.
 
@@ -48,8 +48,8 @@ Los KPIs que encontramos mediante el analisis exploratorio de los datos fueron :
 
 4. **Comparativa de Score Promedio de Bodegas o Bares de Vinos:** Este KPI permitirá identificar cuáles son los establecimientos mejor valorados por los reviewers, proporcionando información valiosa a las empresas para mejorar su desempeño
 
-5. **Volumen de Reseñas por Establecimiento:**muestra la popularidad y la satisfacción general de los clientes con el lugar.
-.
+5. **Volumen de Reseñas por Establecimiento:** muestra la popularidad y la satisfacción general de los clientes con el lugar.
+
 
 ## Implementación del Stack Propuesto
 
