@@ -1,6 +1,6 @@
 # Review Insights - Análisis de Reseñas y Recomendaciones
 
-![Review](imagenes/Banner de LinkedIn Sencillo Tecnología.png).
+![Review](https://github.com/mariangigena/proyectogrupal/blob/main/imagenes/Banner%20de%20LinkedIn%20Sencillo%20Tecnolog%C3%ADa.png).
 
 ## Introducción
 
