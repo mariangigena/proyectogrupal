@@ -1,6 +1,6 @@
 # Review Insights - Análisis de Reseñas y Recomendaciones
 
-![Review](https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png)3.
+![Review](imagenes/Banner de LinkedIn Sencillo Tecnología.png).
 
 ## Introducción
 
