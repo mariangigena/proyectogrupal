@@ -43,15 +43,16 @@ Nuestra misión es convertir el conocimiento de las experiencias del cliente en 
 
 Los KPIs que encontramos mediante el analisis exploratorio de los datos fueron :
 
-1. **Cantidad de Reviewers Identificados como Conocedores de Vinos:** Este KPI está directamente relacionado con el objetivo del proyecto de identificar a los usuarios que tienen experiencia y conocimiento en vinos, lo que aporta valor al recibir opiniones de expertos.
+1. **Cantidad de Reviewers Identificados como Conocedores de Vinos:** Este KPI está directamente relacionado con nuestro objetivo principal. Buscamos identificar a los usuarios que poseen experiencia y conocimiento en el mundo del vino. Esta métrica nos permite aprovechar opiniones de expertos que aportan un alto valor en sus evaluaciones.
 
-2. **Distribución de Reviewers según su Categoría:** Este KPI proporciona información importante sobre la composición de los usuarios que realizan reseñas, lo que ayudará a determinar si el negocio atrae a reviewers profesionales o si la mayoría son consumidores circunstanciales.
+2. **Distribución de Reviewers según su Categoría:**  Este KPI proporciona información crucial sobre la composición de los usuarios que realizan reseñas. Al analizar esta distribución, podremos determinar si estamos atrayendo principalmente a reviewers profesionales con un conocimiento sólido en vinos o si la mayoría son consumidores casuales.
 
-3. **Score Promedio de Expertos y Aficionados:** Al comparar el score promedio entre reviewers profesionales y amateurs, se puede evaluar si las opiniones de los expertos tienen un impacto significativo en la calificación general de las bodegas o bares de vinos.
+3. **Score Promedio de Expertos y Aficionados:** Al comparar los scores promedio entre reviewers profesionales y amateurs, estaremos en condiciones de evaluar el impacto que tienen las opiniones de los expertos en la calificación general de bodegas y bares de vinos. Este KPI nos ayudará a comprender si las voces de los conocedores influyen significativamente en la percepción del lugar.
 
-4. **Comparativa de Score Promedio de Bodegas o Bares de Vinos:** Este KPI permitirá identificar cuáles son los establecimientos mejor valorados por los reviewers, proporcionando información valiosa a las empresas para mejorar su desempeño
 
-5. **Volumen de Reseñas por Establecimiento:** muestra la popularidad y la satisfacción general de los clientes con el lugar.
+4. **Comparativa de Score Promedio de Bodegas o Bares de Vinos:** Este KPI nos permitirá identificar y destacar los establecimientos mejor valorados por los revisores. Esta información será extremadamente valiosa para las empresas, ya que podrán ajustar sus estrategias y mejorar su desempeño basándose en los aspectos que destacan en las opiniones positivas.
+
+5. **Volumen de Reseñas por Establecimiento:** Este KPI refleja la popularidad y la satisfacción general de los clientes en cada lugar. Cuantas más reseñas reciba un establecimiento, más visible será su experiencia para el público en general. Este KPI se convierte en un barómetro clave para evaluar la aceptación del público y la calidad del servicio ofrecido.
 
 
 ## **Implementación del Stack Propuesto**
@@ -66,7 +67,7 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo. 
 
-5. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.
+5. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.[Tablero](https://trello.com/b/Wgepholb/google-yelp)
 
 5. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
 
