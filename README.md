@@ -25,8 +25,9 @@ La falta de una herramienta efectiva para identificar a aquellos reviewers con e
 
 
 
-## **Objetivo**:
+## **Alcances y Objetivo**:
 
+Vamos a tomar los datos de todos los estados de Esatdos unidos como primer instancia, porque el volumen de los mismos nos ayuda para un mejor analisis.
 El objetivo principal de nuestro proyecto, es proporcionar a las empresas del sector vinícola una valiosa visión sobre las experiencias y opiniones de los usuarios en relación con bodegas y bares o clubes de vinos en Estados Unidos. A través de un análisis exhaustivo de las reseñas y recomendaciones, buscamos identificar a aquellos reviewers que han puntuado establecimientos vinícolas de manera significativa, determinando así a los conocedores con expertise en vinos.
 
 Uno de nuestros enfoques clave es la categorización de los`reviewers` en dos grupos distintos: profesionales y consumidores circunstanciales. Mediante esta clasificación, pretendemos evaluar el score promedio otorgado por cada grupo con relación a diferentes bodegas o bares de vino. De esta manera, podremos identificar posibles diferencias en sus opiniones, permitiendo a las empresas entender mejor el impacto de las opiniones expertas y del público general en la percepción y éxito de sus establecimientos
@@ -74,11 +75,14 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 5. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
 
 
+## Documentacion 
+1- [Analisis sobre el mercado vitivinicola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).
+
+2- [Caso de estudio de exportacion de vinos a California](https://es.scribd.com/document/499977209/Dialnet-ExportacionDeVinoTintoAlEstadoDeCalifornia-7242720)
 
 
 
-
-`Integrantes del grupo` :
+## Integrantes del grupo :
 
 **Diego Forcato** [Linkedin](https://www.linkedin.com/in/diegoforcato)
 
