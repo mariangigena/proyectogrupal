@@ -80,6 +80,7 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 2- [Caso de estudio de exportacion de vinos a California](https://es.scribd.com/document/499977209/Dialnet-ExportacionDeVinoTintoAlEstadoDeCalifornia-7242720)
 
+3- [Diccionario de los Dataset](https://docs.google.com/spreadsheets/d/1yqzhAJYQmZR4UNs7w-sYEJx5k-rC_-pfw1gnUHxsuPc/edit#gid=0)
 
 
 ## Integrantes del grupo :
