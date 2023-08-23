@@ -70,7 +70,7 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo. 
 
-5. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.[Tablero](https://trello.com/b/Wgepholb/google-yelp)
+5. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.![Tablero](https://trello.com/b/Wgepholb/google-yelp)
 
 5. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
 
@@ -79,7 +79,7 @@ Por supuesto, aquí tienes una versión mejorada del texto que describe el proce
 ## **Proceso ETL en Azure Data Warehouse**
 
 El proceso ETL (Extract, Transform, Load) del almacén de datos consistió en incorporar y procesar conjuntos de datos de Google y Yelp. El objetivo era crear un conjunto de datos completo para el análisis y la comprensión de los establecimientos relacionados con el vino. El proceso se diseñó para garantizar la precisión de los datos, las actualizaciones incrementales y una transformación eficaz.
-[Esquema del proceso](
+![Esquema](https://github.com/mariangigena/proyectogrupal/blob/main/imagenes/Azure2.png)
 ### **Ingesta y almacenamiento de datos**
 
 El almacén de datos se construyó utilizando los servicios Azure, y los conjuntos de datos de Google y Yelp se introdujeron en contenedores de bloques para su almacenamiento y posterior procesamiento.
@@ -88,7 +88,7 @@ El almacén de datos se construyó utilizando los servicios Azure, y los conjunt
 
 Para los conjuntos de datos que constituían tablas de dimensiones, se implementó un enfoque de actualización incremental. Esto se logró mediante la función Dataflow de Azure Data Factory. Dataflow permite la creación de pipelines que aplican operaciones ETL básicas a un conjunto de datos y luego transfieren los datos transformados a una base de datos MySQL. Este enfoque resultó eficaz para gestionar tablas de dimensiones en las que los cambios de datos a lo largo del tiempo son menos frecuentes.
 
-### **Actualizaciones incrementales impulsadas por tuberías**
+### **Actualizaciones incrementales impulsadas por canalizaciones**
 
 Para los conjuntos de datos que requerían transformaciones y actualizaciones más complejas, se adoptó un enfoque de canalización. Esto implicaba la supervisión de una carpeta designada dentro del contenedor de bloques. Cada vez que llegaba un nuevo conjunto de datos, se activaba la ejecución de un cuaderno en Azure Databricks. El cuaderno contenía lógica ETL avanzada para actualizar varias tablas de la base de datos. Este enfoque basado en canalizaciones resultó especialmente útil para actualizar las tablas de dimensiones y hechos.
 
