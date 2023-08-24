@@ -82,7 +82,7 @@ El proceso ETL (Extract, Transform, Load) del almacén de datos consistió en in
 ![Esquema](https://github.com/mariangigena/proyectogrupal/blob/main/imagenes/Azure2.png)
 ### **Ingesta y almacenamiento de datos**
 
-El almacén de datos se construyó utilizando los servicios Azure, y los conjuntos de datos de Google y Yelp se introdujeron en contenedores de bloques para su almacenamiento y posterior procesamiento.
+El almacén de datos se construyó utilizando los servicios Azure, y los conjuntos de datos de Google y Yelp se introdujeron en contenedores de bloques para su almacenamiento y posterior procesamiento. este es el esquema de las tablas con sus claves : ![Diagrama](imagenes/reviews_insights_schema.png)
 
 ### **Actualizaciones Incrementales y ETL Básico**
 
