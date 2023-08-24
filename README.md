@@ -102,7 +102,7 @@ El proceso de verificación consistía en comprobar si había filas duplicadas a
 
 Al estructurar el proceso ETL de esta manera, pudimos gestionar eficazmente los datos de múltiples fuentes, aplicar las transformaciones adecuadas, garantizar actualizaciones incrementales y mantener los estándares de calidad de los datos. Este sólido proceso ETL sentó las bases para un análisis preciso y profundo dentro del almacén de datos.
 
-Para más detalles sobre los scripts, pipelines y transformaciones específicos aplicados durante el proceso ETL, consulte el código y la documentación pertinentes en el repositorio del proyecto.
+Para más detalles sobre los scripts, pipelines y transformaciones específicos aplicados durante el proceso ETL, consulte el código y la documentación pertinentes en el repositorio del proyecto[Código](https://github.com/mariangigena/proyectogrupal/blob/main/scripts/metadata_sitios_unir_jsons.ipynb)
 
 
 ## Documentacion 
