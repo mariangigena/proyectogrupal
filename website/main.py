@@ -1,5 +1,6 @@
 import streamlit as st
-# from PIL import Image 
+import os
+
 
 st.set_page_config(
     page_title= "Review Insights - Bienvenidos",
@@ -8,14 +9,8 @@ st.set_page_config(
     initial_sidebar_state= "auto"
 )
 
-# background = Image.open('./Images/Background.png')
-# st.image(background, use_column_width= True)
-
-# logo = st.image('./Images/Banner.png', caption= 'Banner')
-st.image("Banner.png", use_column_width= True)
-
-# Cargar el CSS personalizado
-# st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
+image_path = os.path.join(os.path.dirname(__file__), "Banner.png")
+st.image(image_path, use_column_width= True)
 
 
 st.title("Review Insights - Análisis de Reseñas y Recomendaciones")
