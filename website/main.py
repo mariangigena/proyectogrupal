@@ -3,7 +3,7 @@ from PIL import Image
 
 st.set_page_config(
     page_title= "Review Insights - Bienvenidos",
-    page_icon= "./Images/handshake-regular.svg",
+    page_icon= "Images/handshake-regular.svg",
     layout= "wide",
     initial_sidebar_state= "auto"
 )
@@ -11,7 +11,7 @@ st.set_page_config(
 # background = Image.open('./Images/Background.png')
 # st.image(background, use_column_width= True)
 
-logo = Image.open('./Images/Banner.png')
+logo = Image.open('Images/Banner.png')
 st.image(logo, use_column_width= True)
 
 # Cargar el CSS personalizado
