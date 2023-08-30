@@ -11,8 +11,8 @@ st.set_page_config(
 # background = Image.open('./Images/Background.png')
 # st.image(background, use_column_width= True)
 
-logo = st.image('./Images/Banner.png', caption= 'Banner')
-st.image(logo, use_column_width= True)
+# logo = st.image('./Images/Banner.png', caption= 'Banner')
+st.image('./Images/Banner.png', use_column_width= True)
 
 # Cargar el CSS personalizado
 # st.markdown('<style>' + open('styles.css').read() + '</style>', unsafe_allow_html=True)
