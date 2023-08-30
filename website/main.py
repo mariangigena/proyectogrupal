@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image 
+# from PIL import Image 
 
 st.set_page_config(
     page_title= "Review Insights - Bienvenidos",
@@ -11,7 +11,7 @@ st.set_page_config(
 # background = Image.open('./Images/Background.png')
 # st.image(background, use_column_width= True)
 
-logo = Image.open('Images/Banner.png')
+logo = st.image('./Images/Banner.png', caption= 'Banner')
 st.image(logo, use_column_width= True)
 
 # Cargar el CSS personalizado
