@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Problemática
 st.header('Problemática')
@@ -15,7 +16,8 @@ if st.checkbox("Saludo"):
 fields = ['country', 'points','price', 'variety']
 
 # Cargamos el DataFrame solo con esas columnas
-wine_reviews = pd.read_csv('wine_reviews.csv', usecols = fields)
+ruta_archivo = os.path.join(os.path.dirname(__file__), "wine_reviews.csv")
+wine_reviews = pd.read_csv(ruta_archivo, usecols = fields)
 wine_reviews.dropna(inplace = True)
 
 if st.checkbox("Mostrar Tabla de datos"):
