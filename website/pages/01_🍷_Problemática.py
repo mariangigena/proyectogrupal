@@ -16,7 +16,7 @@ if st.checkbox("Saludo"):
 fields = ['country', 'points','price', 'variety']
 
 # Cargamos el DataFrame solo con esas columnas
-ruta_archivo = os.path.join(os.path.dirname(__file__), "wine_reviews.csv")
+ruta_archivo = os.path.join(os.path.dirname(os.path.dirname(__file__)), "wine_reviews.csv")
 wine_reviews = pd.read_csv(ruta_archivo, usecols = fields)
 wine_reviews.dropna(inplace = True)
 
