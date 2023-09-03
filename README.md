@@ -110,6 +110,38 @@ Para más detalles sobre los scripts, pipelines y transformaciones específicos 
 
 ## 3. **Exploratory Data Analysis**
 
+### Análisis Preliminar
+
+**Origen de los Datos**: Se trabajó con dos conjuntos de datos, uno de Google Maps y otro de Yelp, que contenían reseñas de negocios y lugares. Aunque no fue posible unirlos directamente, se identificó que ambas fuentes compartían el componente de reseñas.
+
+**Insights de Yelp**: Se destacaron algunos hallazgos del análisis de los datos de Yelp, como la prevalencia de reseñas que mencionaban problemas en lugar de elogios. Además, se notó la falta de usuarios con el estatus "elite" en 2022 y se observó que los usuarios con un gran número de seguidores o reseñas podrían considerarse "influencers". También se notó que los usuarios que otorgaban calificaciones extremas (1 o 5 estrellas) no habían realizado muchas reseñas y carecían de amigos en la plataforma.
+
+**Palabra Clave "Wine"**: Se identificó la palabra clave "Wine" en las reseñas y se decidió centrar el análisis en torno a esta palabra clave debido a su presencia en varias categorías.
+
+**Datos de Google Maps**: En el análisis de los datos de Google Maps, se notaron valores nulos en algunas columnas, lo que llevó a una selección cuidadosa de las columnas a utilizar. Se observaron palabras relacionadas con el servicio y la gastronomía en las reseñas, lo que llevó a la elección de "Wine" como enfoque.
+
+**Categoría "Wine"**: Se observó que todas las categorías relacionadas con "Wine" tenían calificaciones promedio por encima de 4, lo que indicaba calificaciones positivas.
+
+### Análisis Completo
+
+**Imputación de Datos**: Se acordó imputar valores nulos en las reseñas con "Not Description" debido a su impacto significativo en el análisis.
+
+**Palabras Clave Frecuentes**: Se identificaron palabras clave más utilizadas en las reseñas, destacando términos como "Great", "Love", "Owner", y "Nice".
+
+**Outliers**: Se decidió incluir los valores atípicos en el análisis, ya que su proporción no sesgaba significativamente los resultados.
+
+**Correlación**: Se encontró una correlación débilmente negativa entre la longitud de las reseñas y la puntuación, lo que sugiere que las reseñas más largas tienden a tener puntuaciones ligeramente más bajas.
+
+**Distribución de Reseñas**: Se observó que la mayor cantidad de reseñas se encontraba en Nueva York, seguida de California y Washington. Las puntuaciones más altas se dieron en la costa este de EE. UU., especialmente en Nueva York.
+
+**Usuarios con Múltiples Ubicaciones**: Se identificaron 1421 usuarios que realizaron reseñas en más de una ubicación, con un 90% de ellos revisando en dos ubicaciones diferentes. Nueva York y California concentraron la mayoría de estas reseñas.
+
+**Selección de Categorías para el Análisis**: Se decidió realizar el análisis en categorías específicas, como "wine store", "winery", y "wine bar", debido a su significativa cantidad de reseñas y puntuaciones altas.
+
+**Comparativa de Establecimientos**: Entre los 10 establecimientos con más reseñas, se encontraron categorías como "wine store", "wine bar", "winery", y "wine club". Los establecimientos de "wine store" obtuvieron las calificaciones más altas.
+
+
+
 ## Documentacion 
 1- [Analisis sobre el mercado vitivinicola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).
 
