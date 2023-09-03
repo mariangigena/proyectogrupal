@@ -5,6 +5,9 @@
 
 ![Review](https://github.com/mariangigena/proyectogrupal/blob/main/imagenes/Banner%20de%20LinkedIn%20Sencillo%20Tecnolog%C3%ADa.png).
 
+
+## 1. Proyecto: El inicio 
+
 ## **Introducción**
 
 `Review Insights` es una empresa de análisis de datos que tiene como objetivo proporcionar información valiosa a otras empresas sobre las reseñas y recomendaciones que reciben de los usuarios en plataformas como Yelp y Google Maps. Nuestro enfoque principal es recopilar, analizar y ofrecer información significativa sobre las experiencias de los usuarios en diferentes comercios.
@@ -27,7 +30,7 @@ La falta de una herramienta efectiva para identificar a aquellos reviewers con e
 
 ## **Alcances y Objetivo**:
 
-Vamos a tomar los datos de todos los estados de Esatdos unidos como primer instancia, porque el volumen de los mismos nos ayuda para un mejor analisis.
+Vamos a tomar los datos de todos los estados de Estados Unidos como primer instancia, porque el volumen de los mismos nos ayuda para un analisis mas significativo de los datos.
 El objetivo principal de nuestro proyecto, es proporcionar a las empresas del sector vinícola una valiosa visión sobre las experiencias y opiniones de los usuarios en relación con bodegas y bares o clubes de vinos en Estados Unidos. A través de un análisis exhaustivo de las reseñas y recomendaciones, buscamos identificar a aquellos reviewers que han puntuado establecimientos vinícolas de manera significativa, determinando así a los conocedores con expertise en vinos.
 
 Uno de nuestros enfoques clave es la categorización de los`reviewers` en dos grupos distintos: profesionales y consumidores circunstanciales. Mediante esta clasificación, pretendemos evaluar el score promedio otorgado por cada grupo con relación a diferentes bodegas o bares de vino. De esta manera, podremos identificar posibles diferencias en sus opiniones, permitiendo a las empresas entender mejor el impacto de las opiniones expertas y del público general en la percepción y éxito de sus establecimientos
@@ -68,15 +71,16 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 3. `Servicios en la Nube`: Almacenaremos y procesaremos los datos en servicios en la nube de `Azure` para garantizar su disponibilidad y escalabilidad.La eleccion estuvo basada en la cantidad de servicios que nos ofrecia el proveedor y la cantidad de documentacion y las recomendaciones de otros usuarios acerca del cobro de los servicios.
 
-4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo. 
+4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo.
+   
+5. `Streamlit`: La utilizaremos para la visualización de datos y la creación de interfaces de usuario de manera rápida y sencilla, la elegimos debido a su facilidad de uso y su capacidad para crear aplicaciones de manera eficiente sin la necesidad de conocimientos profundos en desarrollo web.
 
-5. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.![Tablero](https://trello.com/b/Wgepholb/google-yelp)
+6. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.![Tablero](https://trello.com/b/Wgepholb/google-yelp)
 
-5. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
+7. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
 
-Por supuesto, aquí tienes una versión mejorada del texto que describe el proceso de ETL realizado en Azure para el Data Warehouse utilizando los datasets de Google y Yelp. Esta versión está más estructurada y clara:
 
-## **Proceso ETL en Azure Data Warehouse**
+## 2. **Proceso ETL en Azure Data Warehouse**
 
 El proceso ETL (Extract, Transform, Load) del almacén de datos consistió en incorporar y procesar conjuntos de datos de Google y Yelp. El objetivo era crear un conjunto de datos completo para el análisis y la comprensión de los establecimientos relacionados con el vino. El proceso se diseñó para garantizar la precisión de los datos, las actualizaciones incrementales y una transformación eficaz.
 ![Esquema](https://github.com/mariangigena/proyectogrupal/blob/main/imagenes/Azure2.png)
@@ -104,6 +108,7 @@ Al estructurar el proceso ETL de esta manera, pudimos gestionar eficazmente los 
 
 Para más detalles sobre los scripts, pipelines y transformaciones específicos aplicados durante el proceso ETL, consulte el código y la documentación pertinentes en el repositorio del proyecto[Código](https://github.com/mariangigena/proyectogrupal/blob/main/scripts/metadata_sitios_unir_jsons.ipynb)
 
+## 3. **Exploratory Data Analysis**
 
 ## Documentacion 
 1- [Analisis sobre el mercado vitivinicola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).
