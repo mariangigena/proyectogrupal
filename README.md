@@ -112,6 +112,8 @@ Para más detalles sobre los scripts, pipelines y transformaciones específicos 
 
 ### Análisis Preliminar
 
+Para realizar este analisis utilizamos Python y sus librerias : pandas, seaborn, matplotlib y wordcloud. Y para la visualizacion de los Kpis y del analisis Power BI. Los analisis que se detallan a continuacion son extraidos de la carpeta [EDA](https://github.com/mariangigena/proyectogrupal/tree/main/EDA)de este repositorio.
+
 **Origen de los Datos**: Se trabajó con dos conjuntos de datos, uno de Google Maps y otro de Yelp, que contenían reseñas de negocios y lugares. Aunque no fue posible unirlos directamente, se identificó que ambas fuentes compartían el componente de reseñas.
 
 **Insights de Yelp**: Se destacaron algunos hallazgos del análisis de los datos de Yelp, como la prevalencia de reseñas que mencionaban problemas en lugar de elogios. Además, se notó la falta de usuarios con el estatus "elite" en 2022 y se observó que los usuarios con un gran número de seguidores o reseñas podrían considerarse "influencers". También se notó que los usuarios que otorgaban calificaciones extremas (1 o 5 estrellas) no habían realizado muchas reseñas y carecían de amigos en la plataforma.
