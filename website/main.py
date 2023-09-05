@@ -4,7 +4,7 @@ import os
 
 st.set_page_config(
     page_title= "Review Insights - Bienvenidos",
-    page_icon= "Images/handshake-regular.svg",
+    page_icon= "🍷",
     layout= "wide",
     initial_sidebar_state= "auto"
 )
@@ -16,7 +16,14 @@ st.image(image_path, use_column_width= True)
 st.title("Review Insights - Análisis de Reseñas y Recomendaciones")
 st.markdown('***')
 
+# Enlace al video de YouTube
+video_url = "https://www.youtube.com/watch?v=lvNvFnLGZss"
+
+# Muestra el enlace como texto enriquecido
+st.video(video_url)
+
 st.sidebar.markdown('### Menu Interactivo')
+
 
 # Introducción
 st.header('Introducción')
@@ -25,4 +32,3 @@ st.write("Review Insights es una empresa de análisis de datos que tiene como ob
 # Contexto
 st.header('Contexto')
 st.write("La industria vinícola se destaca por su enfoque único en la valoración de la marca a través de opiniones personales y recomendaciones de expertos en guías especializadas...")
-
