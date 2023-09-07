@@ -209,7 +209,8 @@ Con K-Means++, se segmentaron a los revisores en dos grupos: conocedores de vino
 El resultado del modelo no supervisado se guardó en un archivo que se utilizará para alimentar el modelo supervisado de clasificación.
 
 ### Modelo Supervisado para Clasificar Usuarios
-El objetivo del modelo supervisado es clasificar a los usuarios en dos categorías: conocedores de vinos y consumidores casuales. Para ello, se utilizaron datos de entrenamiento etiquetados previamente con las categorías obtenidas del modelo no supervisado.
+El objetivo del modelo supervisado es clasificar a los usuarios en dos categorías: conocedores de vinos y consumidores casuales. Para ello, se utilizaron datos de entrenamiento etiquetados previamente con las categorías obtenidas del modelo no supervisado.[Modelo](https://github.com/mariangigena/proyectogrupal/tree/main/ML/PropuestaA)
+
 
 El proceso del modelo supervisado involucra:
 
@@ -230,7 +231,7 @@ A pesar de que gigantes de la industria como Google o Yelp cuentan con métodos 
 
 Nuestro producto final es una solución integral que aborda esta problemática. Se realizó el deploy en Streamlit, lo que significa que hemos implementado una interfaz interactiva que permite a los usuarios probar y experimentar con nuestro sistema. Hemos incluido un botón de prueba que les permite obtener una revisión aleatoria del conjunto de datos de prueba. Los usuarios pueden hacer clic en este botón y, como respuesta, verán el texto de la revisión, junto con la clasificación de la revisión, que la categoriza como realizada por un conocedor de vinos o un consumidor casual.
 
-Esta implementación en Streamlit agrega un nivel de accesibilidad y usabilidad al producto final. No solo hemos desarrollado un modelo de clasificación de revisores, sino que hemos creado una herramienta interactiva que permite a las empresas y usuarios finales interactuar directamente con nuestro sistema. Esto marca un avance significativo en la evaluación de reseñas y la toma de decisiones basadas en datos para la industria del vino y la hostelería.
+Esta implementación en Streamlit agrega un nivel de accesibilidad y usabilidad al producto final. No solo hemos desarrollado un modelo de clasificación de revisores, sino que hemos creado una herramienta interactiva que permite a las empresas y usuarios finales interactuar directamente con nuestro sistema. Esto marca un avance significativo en la evaluación de reseñas y la toma de decisiones basadas en datos para la industria del vino y la hostelería.[Prueba](https://review-insights.streamlit.app/Usa_nuestro_Modelo_Machine_Learning)
 
 ## Documentacion 
 1- [Analisis sobre el mercado vitivinicola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).
