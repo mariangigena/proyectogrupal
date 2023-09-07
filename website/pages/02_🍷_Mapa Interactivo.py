@@ -5,11 +5,9 @@ import os
 from urllib.error import URLError
 
 # Alcances y Objetivos
-st.header('Alcances y Objetivos')
-st.write("Vamos a tomar los datos de todos los estados de Estados Unidos como primera instancia, porque el volumen de los mismos nos ayuda para un mejor análisis...")
+st.header('Mapa Interactivo de Estados Unidos')
+st.write("Este mapa permite ver la ubicación y nombres de lugares de acuerdo a la categoría seleccionada en el menu lateral")
 
-####################################################################################
-# This demo shows how to use st.pydeck_chart to display geospatial data.
 
 # Obtener la ruta al directorio que contiene tu página de Streamlit
 current_directory = os.path.dirname(__file__)
