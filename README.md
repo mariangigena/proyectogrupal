@@ -108,7 +108,7 @@ Al estructurar el proceso ETL de esta manera, pudimos gestionar eficazmente los 
 
 Para más detalles sobre los scripts, pipelines y transformaciones específicos aplicados durante el proceso ETL, consulte el código y la documentación pertinentes en el repositorio del proyecto[Código](https://github.com/mariangigena/proyectogrupal/blob/main/scripts/metadata_sitios_unir_jsons.ipynb)
 
-### **ETL final para alimentar los modelos **
+### **ETL final para alimentar los modelos**
 
 Para llevar a cabo un análisis efectivo de las reseñas, implementamos un proceso de ETL detallado que nos permitió recopilar, limpiar y consolidar datos de múltiples fuentes en un conjunto de datos final coherente y relevante.
 
