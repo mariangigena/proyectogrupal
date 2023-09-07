@@ -1,0 +1,11 @@
+import streamlit as st
+
+# Conclusiones y producto final: 
+st.header('Conclusiones del producto final')
+st.write("A pesar de que gigantes de la industria como Google o Yelp cuentan con métodos para filtrar reseñas no auténticas, hasta donde nosotros sabemos, ninguno de ellos se enfoca en evaluar la experiencia y el conocimiento real de los revisores. Nuestro enfoque ha sido especialmente loable, ya que hemos logrado identificar de manera eficiente a los conocedores de vinos a partir de un vasto conjunto de datos de reseñas que, en su mayoría, ni siquiera estaban orientadas al vino. Estas reseñas solían centrarse en la calidad del servicio, el ambiente y el personal, aspectos que no suelen ser abordados por otros sistemas de clasificación. Nuestro producto final es una solución integral que aborda esta problemática. Se realizó el deploy en Streamlit, lo que significa que hemos implementado una interfaz interactiva que permite a los usuarios probar y experimentar con nuestro sistema. Hemos incluido un botón de prueba que les permite obtener una revisión aleatoria del conjunto de datos de prueba. Los usuarios pueden hacer clic en este botón y, como respuesta, verán el texto de la revisión, junto con la clasificación de la revisión, que la categoriza como realizada por un conocedor de vinos o un consumidor casual. Esta implementación en Streamlit agrega un nivel de accesibilidad y usabilidad al producto final. No solo hemos desarrollado un modelo de clasificación de revisores, sino que hemos creado una herramienta interactiva que permite a las empresas y usuarios finales interactuar directamente con nuestro sistema. Esto marca un avance significativo en la evaluación de reseñas y la toma de decisiones basadas en datos para la industria del vino y la hostelería.")
+
+# Documentación
+st.header('Documentación')
+st.write("1- [Análisis sobre el mercado vitivinícola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).")
+st.write("2- [Caso de estudio de exportación de vinos a California](https://es.scribd.com/document/499977209/Dialnet-ExportacionDeVinoTintoAlEstadoDeCalifornia-7242720)")
+st.write("3- [Diccionario de los Dataset](https://docs.google.com/spreadsheets/d/1yqzhAJYQmZR4UNs7w-sYEJx5k-rC_-pfw1gnUHxsuPc/edit#gid=0)")
