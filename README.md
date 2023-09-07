@@ -73,7 +73,7 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo.
    
-5. `Streamlit`: La utilizaremos para la visualización de datos y la creación de interfaces de usuario de manera rápida y sencilla, la elegimos debido a su facilidad de uso y su capacidad para crear aplicaciones de manera eficiente sin la necesidad de conocimientos profundos en desarrollo web.
+5. `Streamlit`: La utilizaremos para la visualización de datos y la creación de interfaces de usuario de manera rápida y sencilla, la elegimos debido a su facilidad de uso y su capacidad para crear aplicaciones de manera eficiente sin la necesidad de conocimientos profundos en desarrollo web.![App](https://review-insights.streamlit.app/)
 
 6. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.![Tablero](https://trello.com/b/Wgepholb/google-yelp)
 
@@ -144,6 +144,7 @@ Para realizar este analisis utilizamos Python y sus librerias : pandas, seaborn,
  `Comparativa de Establecimientos `: Entre los 10 establecimientos con más reseñas, se encontraron categorías como "wine store", "wine bar", "winery", y "wine club". Los establecimientos de "wine store" obtuvieron las calificaciones más altas.
 
 ## 4. **Machine Learning y producto final**
+
 
 ## Documentacion 
 1- [Analisis sobre el mercado vitivinicola](https://www.tecnovino.com/estados-unidos-el-pais-que-mas-gasta-en-vino-del-mundo/).
