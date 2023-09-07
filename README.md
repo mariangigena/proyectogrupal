@@ -247,7 +247,7 @@ Esta implementación en Streamlit agrega un nivel de accesibilidad y usabilidad 
 
 **Fernando Mubarqui** [Linkedin](https://www.linkedin.com/in/fernando-mubarqui-540136106/)
 
-**Harlan Tonguino** [Linkedin](https://www.linkedin.com/in/harlan-37048a174/)
+**Harlan Tonguino** [Linkedin](https://www.linkedin.com/in/harlan-tonguino-37048a174/)
 
 **Renar Zamora** [Linkedin](https://www.linkedin.com/in/renar-arnoldo-zamora-54bb9024/)
 
