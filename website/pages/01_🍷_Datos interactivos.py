@@ -10,14 +10,6 @@ from PIL import Image
 ruta_reviewfinal = os.path.join(os.path.dirname(os.path.dirname(__file__)), "ReviewFinal.parquet")
 df= pd.read_parquet(ruta_reviewfinal)
 
-if st.checkbox("Vista de primeros o últimos datos"):
-    if st.button("Primeros Datos"):
-        st.write(df.head())
-    if st.button("Últimos Datos"):
-        st.write(df.tail())
-
-st.write("##### Para poder trabajar con el modelo acordamos que a los nulos en reviews les íbamos a imputar el valor not descripción ya que som los que mas nos afectan.")
-
 st.title('Nube de Palabras de Reseñas')
 
 @st.cache_data
@@ -90,5 +82,3 @@ if not filtered_df.empty:
 # Muestra la gráfica en Streamlit
 st.pyplot(plt)
 
-
-##################################################################################################33
