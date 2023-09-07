@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
 import pydeck as pdk
+import os
 from urllib.error import URLError
-
-
 
 # Alcances y Objetivos
 st.header('Alcances y Objetivos')
@@ -12,82 +11,76 @@ st.write("Vamos a tomar los datos de todos los estados de Estados Unidos como pr
 ####################################################################################
 # This demo shows how to use st.pydeck_chart to display geospatial data.
 
-@st.cache_data
-def from_data_file(filename):
-    url = (
-        "https://raw.githubusercontent.com/streamlit/"
-        "example-data/master/hello/v1/%s" % filename
-    )
-    return pd.read_json(url)
+# Obtener la ruta al directorio que contiene tu página de Streamlit
+current_directory = os.path.dirname(__file__)
 
-try:
-    ALL_LAYERS = {
-        "Bike Rentals": pdk.Layer(
-            "HexagonLayer",
-            data=from_data_file("bike_rental_stats.json"),
-            get_position=["lon", "lat"],
-            radius=200,
-            elevation_scale=4,
-            elevation_range=[0, 1000],
-            extruded=True,
-        ),
-        "Bart Stop Exits": pdk.Layer(
+# Definir una función para cargar los datos desde archivos .parquet
+@st.cache_data
+def load_parquet_data(filename):
+    filepath = os.path.join(current_directory, "..", filename)  # Subir un nivel para acceder a los archivos .parquet
+    data = pd.read_parquet(filepath)
+    return data
+
+# Lista de archivos .parquet que deseas cargar
+parquet_files = [
+    {"name": "Wine Bar", "file": "map_bar.parquet"},
+    {"name": "Winery, Tourist attraction", "file": "map_tourist.parquet"},
+    {"name": "Winery, Tourist attraction, Vineyard", "file": "map_vineyard.parquet"},
+    {"name": "Winery", "file": "map_winery.parquet"},
+    {"name": "Wine Store", "file": "map_wine_store.parquet"}
+]
+
+# Barra lateral para seleccionar las capas utilizando casillas de verificación
+selected_layers = st.sidebar.multiselect("Select Layers", [layer_info["name"] for layer_info in parquet_files], default=[layer_info["name"] for layer_info in parquet_files])
+
+# Crear una lista de capas ScatterplotLayer a partir de las capas seleccionadas
+layers = []
+show_names = st.sidebar.checkbox("Show Names", True)  # Casilla de verificación para activar/desactivar los nombres
+
+for layer_info in parquet_files:
+    if layer_info["name"] in selected_layers:
+        data = load_parquet_data(layer_info["file"])
+    
+        scatterplot_layer = pdk.Layer(
             "ScatterplotLayer",
-            data=from_data_file("bart_stop_stats.json"),
-            get_position=["lon", "lat"],
-            get_color=[200, 30, 0, 160],
-            get_radius="[exits]",
-            radius_scale=0.05,
-        ),
-        "Bart Stop Names": pdk.Layer(
-            "TextLayer",
-            data=from_data_file("bart_stop_stats.json"),
-            get_position=["lon", "lat"],
-            get_text="name",
-            get_color=[0, 0, 0, 200],
-            get_size=10,
-            get_alignment_baseline="'bottom'",
-        ),
-        "Outbound Flow": pdk.Layer(
-            "ArcLayer",
-            data=from_data_file("bart_path_stats.json"),
-            get_source_position=["lon", "lat"],
-            get_target_position=["lon2", "lat2"],
-            get_source_color=[200, 30, 0, 160],
-            get_target_color=[200, 30, 0, 160],
+            data=data,
+            get_position=["longitude", "latitude"],
+            get_radius=200,  # Tamaño de los marcadores
+            get_fill_color=[200, 30, 0, 160],  # Color de los marcadores
+            pickable=True,
             auto_highlight=True,
-            width_scale=0.0001,
-            get_width="outbound",
-            width_min_pixels=3,
-            width_max_pixels=30,
-        ),
-    }
-    st.sidebar.markdown("### Map Layers")
-    selected_layers = [
-        layer
-        for layer_name, layer in ALL_LAYERS.items()
-        if st.sidebar.checkbox(layer_name, True)
-    ]
-    if selected_layers:
-        st.pydeck_chart(
-            pdk.Deck(
-                map_style=None,
-                initial_view_state={
-                    "latitude": 37.76,
-                    "longitude": -122.4,
-                    "zoom": 11,
-                    "pitch": 50,
-                },
-                layers=selected_layers,
-            )
+            id=layer_info["name"]  # Usar el nombre personalizado como ID
         )
-    else:
-        st.error("Please choose at least one layer above.")
-except URLError as e:
-    st.error(
-        """
-        **This demo requires internet access.**
-        Connection error: %s
-    """
-        % e.reason
-    )
+    
+        # Capa TextLayer para mostrar los nombres si está activada
+        if show_names:
+            text_layer = pdk.Layer(
+                "TextLayer",
+                data=data,
+                get_position=["longitude", "latitude"],
+                get_text="name_y",  # El nombre de la columna que contiene los nombres
+                get_color=[255, 255, 0, 200],  # Amarillo brillante (RGBA)
+                get_size=14,
+                get_alignment_baseline="'bottom'",
+            )
+            layers.append(text_layer)  # Agregar la capa de nombres si está activada
+    
+        layers.append(scatterplot_layer)  # Agregar la capa de puntos
+
+# Configurar la vista inicial del mapa
+view_state = pdk.ViewState(
+    latitude=37.76,
+    longitude=-122.4,
+    zoom=11,
+    pitch=50
+)
+
+# Crear el mapa con las capas seleccionadas
+if layers:
+    st.pydeck_chart(pdk.Deck(
+        map_style=None,
+        initial_view_state=view_state,
+        layers=layers
+    ))
+else:
+    st.warning("Please select at least one layer to display.")
