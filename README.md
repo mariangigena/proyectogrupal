@@ -73,9 +73,9 @@ Hemos seleccionado un stack tecnológico que nos permitirá llevar a cabo el an�
 
 4. `Python y Librerías`: Utilizaremos el lenguaje de programación Python junto con librerías como pandas, NumPy y scikit-learn para realizar el análisis de datos y la creación del modelo.
    
-5. `Streamlit`: La utilizaremos para la visualización de datos y la creación de interfaces de usuario de manera rápida y sencilla, la elegimos debido a su facilidad de uso y su capacidad para crear aplicaciones de manera eficiente sin la necesidad de conocimientos profundos en desarrollo web.![App](https://review-insights.streamlit.app/)
+5. `Streamlit`: La utilizaremos para la visualización de datos y la creación de interfaces de usuario de manera rápida y sencilla, la elegimos debido a su facilidad de uso y su capacidad para crear aplicaciones de manera eficiente sin la necesidad de conocimientos profundos en desarrollo web.[![App](imagenes/review-insights.png)](https://review-insights.streamlit.app/)
 
-6. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.![Tablero](https://trello.com/b/Wgepholb/google-yelp)
+6. `Trello`: elegimos esta herramienta para poder ordenar el trabajo en equipo y para poder seguir un flujo de trabajo.[![Tablero](imagenes/trello.png)](https://trello.com/b/Wgepholb/google-yelp)
 
 7. `Canva`: usamos esta herramienta para poder apoyarnos visualmente en las demos del proyecto, así como para la generación de imágenes de nuestra autoría.
 
